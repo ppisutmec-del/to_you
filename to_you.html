@@ -170,16 +170,6 @@
       }
     }
 
-    .letter-date {
-      text-align: right;
-      font-size: 12px;
-      color: var(--ink-soft);
-      letter-spacing: 1px;
-      margin-bottom: 2rem;
-      font-style: italic;
-      opacity: 0;
-      animation: fadeUp 0.7s 1.2s ease both;
-    }
 
     .salutation {
       font-family: 'Cormorant Garamond', serif;
@@ -386,15 +376,15 @@
       <div class="seal">♥</div>
       <div class="letter-content">
         <div class="ornament">· · · · ·</div>
-        <div class="letter-date" id="letter-date"></div>
 
         <div class="salutation">ที่รัก,</div>
 
         <div class="body-text">
           <p>
-            พี่รู้ว่าคำพูดของพี่ทำให้หนูเจ็บปวด
+            พี่รู้ว่าคำพูดของพี่ทำให้หนูแย่
             และพี่เสียใจในทุกคำที่พูดออกไปโดยไม่คิด
             มันไม่ใช่สิ่งที่พี่รู้สึกจริง ๆ กับหนูเลย
+            พี่ขอขอบคุณหนูที่อยู่เคียงข้างพี่
           </p>
 
           <p>
@@ -435,11 +425,6 @@
     </div>
 
     <script>
-      // Set date
-      const d = new Date();
-      const months = ['มกราคม', 'กุมภาพันธ์', 'มีนาคม', 'เมษายน', 'พฤษภาคม', 'มิถุนายน', 'กรกฎาคม', 'สิงหาคม', 'กันยายน', 'ตุลาคม', 'พฤศจิกายน', 'ธันวาคม'];
-      document.getElementById('letter-date').textContent = `${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear() + 543}`;
-
       // Petals
       const petalSymbols = ['✿', '❀', '✾', '❁', '♡'];
       const container = document.getElementById('petals');
